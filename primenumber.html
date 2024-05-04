@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=5;
+    function prime(){
+if(n<2)
+{
+    return '${n} is not a prime'
+}
+for(let i= 2;i<n; i++){
+if(n% i ===0){
+    return '${n} is not a prime number'
+}
+}
+return '${n} is a prime number'
+    }
+    document.write(n +" is a prime number." + "<br>"); 
+
+    function fact(n){
+        if(n==0){
+            return 1;
+        }
+        else{
+        return result= n*fact(n-1);
+    }
+    }
+    result=fact(n);
+    document.write(result +" is the factorial value of 5");
+    </script>
+</body>
+</html>
